@@ -8,12 +8,6 @@
     "options_page": "options/options.html",
     "content_scripts": [
         {
-            "matches": ["https://www.youtube.com/"],
-            "css": ["content-scripts/content-script.css"],
-            "js": ["content-scripts/jquery.js", "content-scripts/content-script.js"],
-            "exclude-matches": ["https://www.youtube.com/results?search_query=*","https://www.youtube.com/watch?v=*"]
-        },
-        {
             "matches": ["https://www.youtube.com/watch?v=*"],
             "js": ["content-scripts/jquery.js","content-scripts/secondary-script.js"]
         }

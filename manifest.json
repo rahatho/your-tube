@@ -10,7 +10,8 @@
         {
             "matches": ["https://www.youtube.com/"],
             "css": ["content-scripts/content-script.css"],
-            "js": ["content-scripts/jquery.js", "content-scripts/content-script.js"]
+            "js": ["content-scripts/jquery.js", "content-scripts/content-script.js"],
+            "exclude-matches": ["https://www.youtube.com/results?search_query=*",]
         }
     ]
 }

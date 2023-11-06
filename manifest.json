@@ -8,8 +8,9 @@
     "options_page": "options/options.html",
     "content_scripts": [
         {
+            "run_at": "document_end",
             "matches": ["https://www.youtube.com/watch?v=*"],
-            "js": ["content-scripts/jquery.js","content-scripts/secondary-script.js"]
+            "js": ["content-scripts/jquery.js","content_scripts/content_scripts.js"]
         }
     ]
 }

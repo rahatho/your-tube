@@ -11,5 +11,5 @@ chrome.runtime.onMessage.addListener((msg) => {
 });*/
 
 $(document).ready(function() {
-    $("#contents").hide();
+    $("#secondary").hide();
 });

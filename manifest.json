@@ -1,0 +1,16 @@
+{
+    "name": "Youtube Destruction off",
+    "description": "Turn off youtube destruction",
+    "version": "1.2",
+    "manifest_version": 3,
+    "background": {"service_worker": "background.js"},
+    "action": {"default_popup": "popup/popup.html"},
+    "options_page": "options/options.html",
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/"],
+            "css": ["content-scripts/content-script.css"],
+            "js": ["content-scripts/jquery.js", "content-scripts/content-script.js"]
+        }
+    ]
+}
